@@ -10,26 +10,30 @@
   scroll-padding-top: 2rem;
   font-family: "Poppins", sans-serif;
 }
-.list-group-item{
-  color: #000;
-  padding: 10px;
+.list-group-item a {
+  color: #1e5c5a68; /* bisa ganti sesuai warna kalem yang kamu mau */
+  text-decoration: none; /* supaya tidak ada garis bawah */
 }
+
+.list-group-item a:hover {
+  color: #a67c52; /* warna hover kalem */
+}
+
 :root {
-  --main-color: #18283e;
-  --bg-color: #fff;
-  --text-color: #18283e;
-  --hover: hsl(260, 100%, 51%);
- 
+  --main-color: #a79277;
+  --bg-color: #fdfaf6;
+  --text-color: #4a4a4a;
+  --hover: #c0a98b;
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
   --p-font: 0.941rem;
 }
 section {
-  padding: 50px 10%;
+  padding: 50px 2%;
 }
 body.active {
-  --text-color: #fff;
-  --bg-color: #0f0c27;
+  --text-color: #ded9dc;
+  --bg-color: #231a20;
 }
 body {
   background: var(--bg-color);
@@ -48,7 +52,7 @@ body {
  
 .heading span {
   font-size: var(--p-font);
-  color: rgb(2, 166, 70);
+  color: #9e8d7f;
 }
 header {
   position: fixed;
@@ -66,7 +70,7 @@ header {
 				2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 header.shadow {
-  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+  box-shadow: 0 0 4px rgba(14, 55, 55, 0.15);
 }
 .logo {
   font-size: 1.61rem;
@@ -141,7 +145,7 @@ header.shadow {
 .btn {
   display: inline-block;
   background: var(--main-color);
-  color: #fff;
+  color: #1a1010;
   padding: 0.7rem 1.3rem;
   border-radius: 0.5rem;
 }
@@ -198,9 +202,10 @@ header.shadow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
-  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
 }
+
 .bars-box h3,
 span {
   font-size: 1.1rem;
@@ -212,7 +217,7 @@ span {
   left: 0;
   width: 100%;
   height: 0.5rem;
-  background: hsla(260, 100%, 44%, 0.4);
+  background: hsla(260, 56%, 29%, 0.294);
   border-radius: 0.5rem;
 }
 .percent-bar {
@@ -257,10 +262,10 @@ span {
   text-align: center;
   border-radius: 0.5rem;
   border-bottom: 2px solid var(--main-color);
-  box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+  box-shadow: 0 2px 7px rgba(6, 92, 91, 0.15);
 }
 .services-box:hover{
- background-color: #02225a;
+   background-color: #8B0000;
 }
 
 .services-box h3 {
@@ -277,7 +282,7 @@ span {
   color: var(--main-color);
 }
 .services-box:hover .bx{
-  color: #22cf91;
+  color: #685b05;
 }
 .services-box a {
   color: var(--main-color);
@@ -285,7 +290,7 @@ span {
   font-weight: 500;
 }
 .services-box:hover a{
-  color: #8b8a8f;
+ color: #f4f4f4;
 }
 .portfolio-content {
   display: grid;
@@ -322,7 +327,7 @@ textarea {
   width: 100%;
   border: none;
   outline: none;
-  background: hsla(260, 100%, 44%, 0.1);
+  background: hsla(34, 71%, 20%, 0.657);
   margin-bottom: 1rem;
   color: var(--text-color);
 }
@@ -337,7 +342,7 @@ form textarea {
 .contact-button {
   width: 160px;
   cursor: pointer;
-  background: #2768d9;
+  background: #3e1515c7;
   color: #fff;
   justify-content: center;
   text-transform: uppercase;
@@ -352,14 +357,14 @@ form textarea {
   place-items: center;
   padding: 20px;
   background: #ebebeb;
-  color: #000;
+  color: #321212c5;
 }
 .footer h2 {
   font-size: 1.5rem;
   margin-bottom: 1.6rem;
 }
 .footer-social a i{
-  color: rgb(10, 26, 208);
+  color: rgb(13, 85, 28);
   font-size: 25px;
   margin-left: 10px;
   text-align: center;
@@ -376,7 +381,7 @@ form textarea {
   color: #fff;
 }
 .copyright a{
-  color: #22cf91;
+  color: #726616;
 }
 /* Making Responsive */
 @media (max-width: 991px) {
